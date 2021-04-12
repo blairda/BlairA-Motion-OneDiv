@@ -408,24 +408,20 @@ textarea {
 /* =============
     Footer
 ============= */
-#shapes {
+#container {
   display: grid;
-  grid-template-columns: auto 60% auto;
-  grid-template-areas: ". shapes .";
+  grid-template-columns: auto 80% auto;
+  grid-template-areas: ". shape .";
   height: 100vh;
 }
-#shapes > div {
-  grid-area: shapes;
+#container > div {
+  grid-area: shape;
 }
-#shapes > div #red-circle {
-  height: 200px;
-  width: 200px;
-  background-color: #e64307;
-  border-radius: 100%;
-  margin-left: 300px;
-}
-#shapes > div #blue-square {
-  height: 200px;
-  width: 200px;
-  background-color: #05deff;
+#container > div #shape {
+  height: 100px;
+  width: 100px;
+  background-color: #720316;
+  border-radius: 30%;
+  border: solid 10px #3d000a;
+  margin: 5%;
 }

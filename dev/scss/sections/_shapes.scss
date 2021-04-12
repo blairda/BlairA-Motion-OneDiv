@@ -1,23 +1,19 @@
-#shapes {
+#container {
 	display: grid;
-	grid-template-columns: auto 60% auto;
-	grid-template-areas: ". shapes .";
+	grid-template-columns: auto 80% auto;
+	grid-template-areas: ". shape .";
 	height: 100vh;
 	> div {
-		grid-area: shapes;
+		grid-area: shape;
 
-		#red-circle {
-			height: 200px;
-			width: 200px;
-			background-color: rgb(230, 67, 7);
-			border-radius: 100%;
-			margin-left: 300px;
-		}
-
-		#blue-square {
-			height: 200px;
-			width: 200px;
-			background-color: rgb(5, 222, 255);
+		#shape {
+			height: 100px;
+			width: 100px;
+			background-color: #720316;
+			border-radius: 30%;
+			border: solid 10px #3d000a;
+			margin: 5%;
+			// margin-left: 300px;
 		}
 	}
 }

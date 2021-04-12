@@ -3,6 +3,8 @@
 	grid-template-columns: auto 80% auto;
 	grid-template-areas: ". shape .";
 	height: 100vh;
+	background-color: #ffffff;
+
 	> div {
 		grid-area: shape;
 

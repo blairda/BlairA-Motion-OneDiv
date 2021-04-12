@@ -1,12 +1,7 @@
 import { gsap } from "gsap";
 
-// gsap.to("#shape", { duration: 1, x: 800 });
-
-// gsap.from("#blue-square", { duration: 4, scale: 2, alpha: 0, delay: 2, repeat: -1, yoyo: true });
-
 let shapeTL = gsap.timeline();
 
-// shapeTL.from("#shape", {duration: 1, })
 shapeTL.from("#shape", {duration: .5, x: 0, y: 0})
     .to("#shape", { duration: 1.5, y: 550, rotate: 360 })
     .to("#shape", { duration: .25, scaleX: 2.5, scaleY: 0.5 })
@@ -34,5 +29,4 @@ shapeTL.from("#shape", {duration: .5, x: 0, y: 0})
     .to("#shape", { duration: 1, rotate: 720 }, "change5")
     .to("#container", {duration: 1, backgroundColor: "#f6c6c6"}, "change5")
     
-    .to("#shape", { duration: 1, ease: "bounce.out", y: 300 })
-    ;
+    .to("#shape", { duration: 1, ease: "bounce.out", y: 300 });
